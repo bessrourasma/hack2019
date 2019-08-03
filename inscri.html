@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+    <html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+        Inscription
+    </title>
+    <script src="verif.js"></script>
+</head>
+<body onload="generercaptcha()">
+    <from name="f1" action="data.php" method="GET" >
+Name & Family Name :<br>
+<input type="text" name="nf" ><br>
+Mail : <br>
+<input type="mail" name="mail" ><br>
+Confirm Mail: <br>
+<input type="mail" name="mail1" ><br>
+Password :<br>
+<input type="password" name="psw" >
+<br>
+Confirm Password : <br>
+<input type="password" name="psw1" >
+<br>
+CIN : <br>
+<input type="number" name="cin" ><br>
+Phone Number : <br>
+<select>
+    <option>
+        +216
+    </option>
+</select>
+<input type="number" name="ph" ><br>
+<!--captcha zone-->
+<input type="button" name="cap" value="Generate Captcha Now" onclick="generercaptcha()" >
+<input type="text" name="code"> <br>
+<!--verif captcha zone-->
+Create The Word Here : 
+<br><input type="text" name="cap2"><br>
+
+
+
+
+
+
+
+
+
+<input type="submit" name="send" value="SingUp" onclick="verif()">
+    </from>
+</body>
+
+</html>

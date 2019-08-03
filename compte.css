@@ -1,0 +1,36 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 30px;
+}
+
+.bar{
+    background-image: 
+ Linear-gradient(217deg, rgb(114, 163, 163), rgb(32, 233, 132) 70.71%),
+
+Linear-gradient(127deg, rgb(0, 0, 0), rgb(0, 0, 0) 70.71%),
+
+Linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+    height:600px;
+}
+
+center{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;    
+}
+
+input{
+        margin-left: 30px;
+}
+
+.bottom{
+    background-color: rgb(76, 107, 107);
+    height: 200px;
+
+}
