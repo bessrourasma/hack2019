@@ -11,7 +11,7 @@
     <script src="verif.js"></script>
 </head>
 <body onload="generercaptcha()">
-    <from name="f1" action="data.php" method="GET" >
+    <from name="f1" action="DB.php" method="GET" >
 Name & Family Name :<br>
 <input type="text" name="nf" ><br>
 Mail : <br>
@@ -32,7 +32,7 @@ Phone Number : <br>
         +216
     </option>
 </select>
-<input type="number" name="ph" ><br>
+<input type="tel" name="ph" ><br>
 <!--captcha zone-->
 <input type="button" name="cap" value="Generate Captcha Now" onclick="generercaptcha()" >
 <input type="text" name="code"> <br>
