@@ -1,14 +1,12 @@
-var nf = document.f1.nf.value ; 
+function verif()
+{
+    var nf = document.f1.nf.value ; 
 var mail = document.f1.mail.value ; 
 var mail1 = document.f1.mail1.value ;
 var psw = document.f1.psw.value ;
 var psw1 = document.f1.psw1.value ; 
 var cin = document.f1.cin.value ;
-var ph = document.f1.ph.value ;
-function verif()
-
-{
-    
+var ph = document.f1.ph.value ;   
   for (i = 0 ; i < nf.length ; i++)
  {
    if ((nf.charAt(i)<"0") || (nf.charAt(i) >"9" )) 
