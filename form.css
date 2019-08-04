@@ -1,7 +1,7 @@
 
 *{
-    margin: 0px;
-    padding: 0px;
+    padding:0px;
+    margin:0px;   
 }
 
 .login {
@@ -93,7 +93,10 @@
 	top:1px;
 }
 
+
+
 .navbar{
+	padding-top: 0;
     background-image:linear-gradient(217deg, rgba(0, 174, 255, 0.8), rgba(0, 255, 200, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 0, 0, 0.247), rgb(211, 201, 201) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.61), rgba(0,0,255,0) 70.71%);
@@ -125,30 +128,30 @@ span{
     color: white;
 }
 
-h1{
-    font-family: 'Lora', serif;
-    margin-left: 30px;
-}
-
-.bar{ 
-    background-image:linear-gradient(217deg, rgba(5, 98, 141, 0.8), rgba(0, 255, 200, 0) 70.71%),
+.bottom{
+    margin-top: 500px;
+    background-image:linear-gradient(217deg, rgba(109, 123, 129, 0.8), rgba(0, 255, 200, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 0, 0, 0.247), rgb(211, 201, 201) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.61), rgba(0,0,255,0) 70.71%);
-
-    height:600px;
+    height: 100px;
 }
-
-center{
-    font-family: 'Lora', serif; 
-    font-size: 35px;    
+.page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 }
-
-input{
-        margin-left: 30px;
+#titre{
+    width: 50%;
+    height: 50px;
+    margin: 30px 0px 0px 350px;
 }
-
-.bottom{
-    background-color: rgb(76, 107, 107);
-    height: 200px;
-
+#titre h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 0, 0, 0.651);
+    border: 1px solid black;
+}
+.contenu{
+    width: 100%;
+    height: 50%;
 }

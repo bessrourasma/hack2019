@@ -36,8 +36,19 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error creating table: " . $conn->error;
 }
+$conn1 = new mysqli($servername, $username, $password);
 
-$conn->close();
+// Check connection
+if ($conn1->connect_error) {
+    die("Connection failed: " . $conn1->connect_error);
+} 
+echo "Connected successfully";
+if ($user != $mail) or ($pass != $psw) 
+echo("Error") ;
+else
+echo("Connected")
+
+
 ?>
 
 
