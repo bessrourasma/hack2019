@@ -13,7 +13,7 @@
 <body onload="generercaptcha()">
     <from name="f1" action="DB.php" method="GET" >
 Name & Family Name :<br>
-<input type="text" name="nf" ><br>
+<input type="text" id="nf" ><br>
 Mail : <br>
 <input type="mail" name="mail" ><br>
 Confirm Mail: <br>
@@ -34,11 +34,11 @@ Phone Number : <br>
 </select>
 <input type="tel" name="ph" ><br>
 <!--captcha zone-->
-<input type="button" name="cap" value="Generate Captcha Now" onclick="generercaptcha()" >
-<input type="text" name="code"> <br>
+<input type="button" id="cap" value="Generate Captcha Now" onclick="generercaptcha()" >
+<input type="text" id="code"> <br>
 <!--verif captcha zone-->
 Create The Word Here : 
-<br><input type="text" name="cap2"><br>
+<br><input type="text" id="cap2"><br>
 
 
 
