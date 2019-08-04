@@ -1,46 +1,47 @@
 function verif()
 {
-    var nf = document.f1.nf.value ; 
-var mail = document.f1.mail.value ; 
-var mail1 = document.f1.mail1.value ;
-var psw = document.f1.psw.value ;
-var psw1 = document.f1.psw1.value ; 
-var cin = document.f1.cin.value ;
-var ph = document.f1.ph.value ;   
-  for (i = 0 ; i < nf.length ; i++)
- {
-   if ((nf.charAt(i)<"0") || (nf.charAt(i) >"9" )) 
-   {
-  {alert("Number detected") ;
-   return false ; }
-   }
+  mail1 = document.f1.mail1.value ;
+  mail= document.f1.mail.value ;
+  ps= document.f1.psw.value ;
+  ps1= document.f1.psw1.value ;
+  tel= document.f1.ph.value ;
+  var x = /^[A-Za-z]+$/
+  var isValid = x.test(document.getElementById("nf").value);
+  if (!isValid) 
+  {
+      alert("Only Alphabets ");
+  
+
+  return isValid; }
+  
+  if (isNaN(f1.mail.value.indexOf("@")==-1)) 
+  {
+    alert("No @") ; 
+  }
+for (var i=0 ; i<mail1.length ; i++)
+{
+  for (var j=0 ; j<mail.length ; j++)
+  {
+if (mail.charAt(j) != mail1.charAt(i))
+{
+  alert("mail is not confirmed") ;
 }
-
-   if (mail != mail1) 
-   {
-   {alert("Confirm Mail") ;
-   return false ;}
-   }
-
-   if (psw != psw1) 
-   {
-   {alert("Confirm Password") ; 
-   return false ;}
-   }
-
-   if(Cin.length!=8 || (Cin.charAt(0)!='0' && Cin.charAt(0)!='1')|| !Numerique(Cin))
-   {
-   {alert('Cin invalide'); return false;} 
-   }
-
-   if(ph.length!=8 || ph.charAt(0)==0  )
-   {
-   {alert('Phone Not Valid')}
-   }
-
-   
-
-
+}
+}
+for (var i=0 ; i<ps1.length ; i++)
+{
+  for (var j=0 ; j<ps.length ; j++)
+  {
+if (ps.charAt(j) != ps1.charAt(i))
+{
+  alert("mail is not confirmed") ;
+}
+}
+}
+if (tel.length > 8)
+{
+  alert("Invalid Phone") ;
+}
 }
 function generercaptcha()
 {    
