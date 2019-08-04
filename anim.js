@@ -18,7 +18,7 @@ $(document).ready(setInterval(function(){
   
       
       $(".tp").hide();
-      $(".tp").show(2000);
+      $(".tp").show(2000); 
 });
       
    
