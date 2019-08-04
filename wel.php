@@ -1,3 +1,3 @@
 <?php
-   include('session.php');
+   link("Home",'<a href="home.html>');
 ?>
