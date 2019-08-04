@@ -16,6 +16,7 @@
     <title>Your Account</title>
 </head>
 <body>
+  <form name="m" action="DB.php" method="GET">
     <nav class="navbar navbar-expand-sm navbar-dark ">
            
         <ul class="navbar-nav">
@@ -35,23 +36,23 @@
         <div class="menu">
             <div class="hh">
                 <div style="font-family: 'Amatic SC', cursive; color:black;margin-left: 100px;">Full Name</div>
-                <td><input type="text" name="np" style="width: 300px;border-radius: 4px;margin-left: 55px;"></td>
+                <td><input id="nf" type="hidden" name="nf" value="<?php echo $nf ?>" style="width: 300px;border-radius: 4px;margin-left: 55px;"></td>
               </div><br>
                 <div class="hh">
                 <div style="font-family: 'Amatic SC', cursive; color:rgb(0, 0, 0);;margin-left: 100px;">Email</div>
-                <td><input type="mail" name="mail" style="width: 300px;border-radius: 4px;margin-left: 90px;"></td>
+                <td><input id="mail" type="hidden" name="mail" value="<?php echo $mail ?>" style="width: 300px;border-radius: 4px;margin-left: 90px;"></td>
               </div><br>
                 <div class="hh">
                 <div style="font-family: 'Amatic SC', cursive; color:rgb(0, 0, 0);;margin-left: 100px;">Password</div>
-                <td><input type="password" name="psw" style="width: 300px;border-radius: 4px;margin-left: 60px;"></td>
+                <td><input id="psw" type="hidden" name="psw" value="<?php echo $psw ?>" style="width: 300px;border-radius: 4px;margin-left: 60px;"></td>
               </div><br>
                 <div class="hh">
                 <div style="font-family: 'Amatic SC', cursive; color:rgb(0, 0, 0);;margin-left: 100px;">CIN</div>
-                <td><input type="number" name="cin"maxlength="8" style="width: 300px;border-radius: 4px;margin-left: 97px;"></td>
+                <td><input id="cin" type="hidden" name="cin" value="<?php echo $cin ?>"maxlength="8" style="width: 300px;border-radius: 4px;margin-left: 97px;"></td>
               </div><br>
                 <div class="hh">
                 <div style="font-family: 'Amatic SC', cursive; color:rgb(0, 0, 0);;margin-left: 100px;">Phone Number</div>
-                <td><input type="number" name="ph" max length="8" style="width: 300px;border-radius: 4px;margin-left: 20px;"></td>
+                <td><input id="tel" type="hidden" name="tel" value="<?php echo $tel ?>" max length="8" style="width: 300px;border-radius: 4px;margin-left: 20px;"></td>
               </div><br>
                
       
@@ -60,5 +61,6 @@
     <div class="bottom">
 
     </div>
+  </form>
 </body>
 </html>
