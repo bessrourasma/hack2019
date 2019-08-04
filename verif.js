@@ -5,6 +5,7 @@ function verif()
   ps= document.f1.psw.value ;
   ps1= document.f1.psw1.value ;
   tel= document.f1.ph.value ;
+  cin= document.f1.cin.value ;
   var x = /^[A-Za-z]+$/
   var isValid = x.test(document.getElementById("nf").value);
   if (!isValid) 
@@ -38,7 +39,7 @@ if (ps.charAt(j) != ps1.charAt(i))
 }
 }
 }
-if (tel.length > 8)
+if (tel.length < 8)
 {
   alert("Invalid Phone") ;
 }
