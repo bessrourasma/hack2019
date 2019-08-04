@@ -15,9 +15,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Formulaire</title>
+    <style>
+        hr {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark">
            
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -33,86 +39,96 @@
           <div>
               <form name="t" action="DB.php" method="GET">
               <div class="page">
-            <div id="titre"><center>
-              <h1>Formulaire De Signalement</h1></center>
-            </div>
-            <br><br>
-            <center>
+            
              <div class="contenu">
-                     <label>City </label>
-                    <br>
-                    <select>
-                        <option>Ariana</option>
-                        <option>Beja</option>
-                        <option>Ben Arous</option>
-                        <option>Bizerte</option>
-                        <option>Gabes</option>
-                        <option>Gafsa</option>
-                        <option>Jendouba</option>
-                        <option>Kairouan</option>
-                        <option>Kasserine</option>
-                        <option>Kebili</option>
-                        <option>Le Kef	</option>
-                        <option>Mahdia</option>
-                        <option>Manouba	</option>
-                        <option>Medenine</option>
-                        <option>Monastir</option>
-                        <option>Nabeul</option>
-                        <option>Sfax</option>
-                        <option>Sidi Bouzid	</option>
-                        <option>Siliana</option>
-                        <option>Sousse</option>
-                        <option>Tataouine</option>
-                        <option>Tozeur</option>
-                        <option>Tunis</option>
-                        <option>Zaghouan</option>
+                    <center><div id="titre">
+                        <br>        
+                            <h1>Formulaire De Signalement</h1></center>
+                        
+                      <center>
+                    <br><br>
+                      <div class="form-container in">
+                   <form class="form-container">
+                        <div class="form-title"><strong>Fill Out This Information To help us more</strong></div>
+                        <br><br>
+                        <div class="field-title-a"><strong>Your City</strong></div>
+                        <br>
+                        <select class="form-field">
+                                <option>Ariana</option>
+                                <option>Beja</option>
+                                <option>Ben Arous</option>
+                                <option>Bizerte</option>
+                                <option>Gabes</option>
+                                <option>Gafsa</option>
+                                <option>Jendouba</option>
+                                <option>Kairouan</option>
+                                <option>Kasserine</option>
+                                <option>Kebili</option>
+                                <option>Le Kef	</option>
+                                <option>Mahdia</option>
+                                <option>Manouba	</option>
+                                <option>Medenine</option>
+                                <option>Monastir</option>
+                                <option>Nabeul</option>
+                                <option>Sfax</option>
+                                <option>Sidi Bouzid	</option>
+                                <option>Siliana</option>
+                                <option>Sousse</option>
+                                <option>Tataouine</option>
+                                <option>Tozeur</option>
+                                <option>Tunis</option>
+                                <option>Zaghouan</option>
+        
+                            </select>  
+                      <br><br>
+                      <div class="field-title-a"><strong>Phone Number</strong></div> 
+                      <br> 
+                  <input class="form-field" type="text" placeholder="Your Phone Number" > 
+<br><br>
 
-                    </select>        
+                      <div class="field-title-a"><strong>Location</strong></div>  
+                      <br>
+                  <input class="form-field" type="text" placeholder="Adresse Of The Location" >
+                  <br>
+                  <br>
+                  <div class="field-title-a"><strong>Type Of Issue</strong></div>
+                  <br>
+                  <select class="form-field">
+                          <option selected aria-setsize="25"> Types :</option>
+                          <option>- Classroom Size</option>
+                          <option>- Poverty</option>
+                          <option>- Student Health</option>
+                          <option>- Inequality</option>
+                          <option>- Technology </option>
+                          <option>- Transport</option>
+                          <option>*  Other Problems related to the school</option>
+                          
+                    </select>
+                  
+                   <br><br>
+                   <div class="field-title-a"><strong>Problem</strong></div>
                    <br>
-                  <br>
-
-                  <label>Adresse </label>
-                  <br>
-                  <input class="cc" type="text" placeholder="Adresse Of The Location" name="adr">
-                  <br>
-                  <br>
-
-                  <label>Phone Number</label>
-                   <br>
-                  <input class="cc" type="text" placeholder="Your Phone Number" name="ph">  
-                  <br>
-                  <br>
-
-                  <label>Problems</label>
-                  <br>
-                   <select class="cc">
-                        <option selected aria-setsize="25"> Types :</option>
-                        <option>- Classroom Size</option>
-                        <option>- Poverty</option>
-                        <option>- Student Health</option>
-                        <option>- Inequality</option>
-                        <option>- Technology </option>
-                        <option>- Transport</option>
-                        <option>*  Other Problems related to the school</option>
-                    
-                  </select> 
-
+                  <input class="form-field" type="text" placeholder="Describe The Problem" id="desc" size="50" class="in">
                   <br><br>
-                  <input class="cc" type="text" placeholder="Describe The Problem" name="desc" size="50">
-                  <br><br>
-                  <input class="cc" type="text" placeholder="Solution You Suggest  (optional)" name="desc" size="50">
+                  <div class="field-title-a"><strong>Sollution</strong></div>
+                  <br>
+                  <input class="form-field" type="text" placeholder="Solution You Suggest  (optional)" id="desc" size="50">
                   <br> <br>
-                  <a href="#" class="myButton">Submit</a></b>
+                  <a href="#" class="login">Submit</a></b>
+                  
+                </div>
                 </center>
+                <br><br>
+            </div>
             </div>
              </div> 
               </form>
           </div>
+          
 <div class="bottom">
-    <form class="form-inline" >
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-success" type="submit">Search</button>
-      </form>
+        <hr>
+    
 </div>
+<script src="anim.js"></script>
 </body>
 </html>
